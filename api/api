@@ -1,0 +1,706 @@
+{
+	"info": {
+		"_postman_id": "005a3ded-63b2-4ddd-ba7b-0fc589065874",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40065547",
+		"_collection_link": "https://demo33-6053.postman.co/workspace/demo~f944a76a-7379-47a9-89be-a49371a0418a/collection/40065547-005a3ded-63b2-4ddd-ba7b-0fc589065874?action=share&source=collection_link&creator=40065547"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"sahil\",\r\n    \"contact\" : \"123456456\",\r\n    \"email\" : \"sahil@gmail.com\",\r\n    \"password\" : \"Sahil@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"sahil@gmail.com\",\r\n    \"password\" : \"Sahil@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userprofile",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODEwN2E2ZWQ0MTg0NDUxZDk3OGJiMjciLCJpYXQiOjE3NDU5MTU3OTN9.bE43dGa43nL-xgMGtACVXjGXSJS0yMbccMwRMDXFlxg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"sahil\",\r\n    \"contact\" : \"contact\",\r\n    \"number\" : \"123456789\",\r\n    \"profielDate\" : \"10/12/2002\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/userprofile/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userprofile",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODEwN2E2ZWQ0MTg0NDUxZDk3OGJiMjciLCJpYXQiOjE3NDU5MTU3OTN9.bE43dGa43nL-xgMGtACVXjGXSJS0yMbccMwRMDXFlxg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"sahil\",\r\n    \"contact\" : \"contact\",\r\n    \"number\" : \"123456789\",\r\n    \"profielDate\" : \"10/12/2002\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/userprofile/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userprofile",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODEwN2E2ZWQ0MTg0NDUxZDk3OGJiMjciLCJpYXQiOjE3NDU5MTU3OTN9.bE43dGa43nL-xgMGtACVXjGXSJS0yMbccMwRMDXFlxg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"name\" : \"sahil\",\r\n    // \"contact\" : \"contact\",\r\n    // \"number\" : \"123456789\",\r\n    // \"profielDate\" : \"10/12/2002\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/userprofile/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userprofile",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODEwN2E2ZWQ0MTg0NDUxZDk3OGJiMjciLCJpYXQiOjE3NDU5MTU3OTN9.bE43dGa43nL-xgMGtACVXjGXSJS0yMbccMwRMDXFlxg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"name\" : \"sahil\",\r\n    // \"contact\" : \"contact\",\r\n    // \"number\" : \"123456789\",\r\n    // \"profielDate\" : \"10/12/2002\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/userprofile/delete/68109c84295b26df57047d85",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userprofile",
+								"delete",
+								"68109c84295b26df57047d85"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"apple\",\r\n    \"pages\" : \"320\",\r\n    \"publishedYear\" : \"10/10/2020\",\r\n    \"price\" : 545,\r\n    \"stock\" : 20,\r\n    \"description\" : \"all abouter the detail description\",\r\n    \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/book/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"book",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/book/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"book",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/book/find/6810ace1151bc1e381b06ac5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"book",
+								"find",
+								"6810ace1151bc1e381b06ac5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/book/delete/6810ace1151bc1e381b06ac5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"book",
+								"delete",
+								"6810ace1151bc1e381b06ac5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"banana\",\r\n    \"pages\" : \"320\",\r\n    \"publishedYear\" : \"10/10/2020\",\r\n    \"price\" : 545,\r\n    \"stock\" : 20,\r\n    \"description\" : \"all abouter the detail description\",\r\n    \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/book/update/6810ace5151bc1e381b06ac7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"book",
+								"update",
+								"6810ace5151bc1e381b06ac7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "genra",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"kalin book\",\r\n    \"description\" : \"all about detail genaras\",\r\n    \"iconUrl\" : \"https:// url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/genre/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"genre",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/genre/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"genre",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/genre/find/6810b195c0df2d45e9c06e30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"genre",
+								"find",
+								"6810b195c0df2d45e9c06e30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/genre/delete/6810b195c0df2d45e9c06e30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"genre",
+								"delete",
+								"6810b195c0df2d45e9c06e30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"mulina jordan book\",\r\n    \"description\" : \"all about detail genaras\",\r\n    \"iconUrl\" : \"https:// url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/genre/update/6810b20ba9cc4d251d647797",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"genre",
+								"update",
+								"6810b20ba9cc4d251d647797"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "publisher",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"kalin book\",\r\n    \"description\" : \"all about detail genaras\",\r\n    \"iconUrl\" : \"https:// url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/genre/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"genre",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publisher/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publisher",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publisher/find/6810be2623f2118a5db650f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publisher",
+								"find",
+								"6810be2623f2118a5db650f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"title\" : \"apple\",\r\n    // \"pages\" : \"320\",\r\n    // \"publishedYear\" : \"10/10/2020\",\r\n    // \"price\" : 545,\r\n    // \"stock\" : 20,\r\n    // \"description\" : \"all abouter the detail description\",\r\n    // \"publishedDate\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publisher/delete/6810be2623f2118a5db650f7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publisher",
+								"delete",
+								"6810be2623f2118a5db650f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"new kalimska \",\r\n    \"address\" : \"yama shali\",\r\n    \"contactEmail\" : \"sahil@gmail.com\",\r\n    \"phone\" : \"+1 3333333333\",\r\n    \"foundedYear\" : \"2020\",\r\n    \"books\" : [\"6810ace5151bc1e381b06ac7\",\"6810afd79a0a4bb3329fb1e5\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publisher/update/6810bef7770fecffd4abd411",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publisher",
+								"update",
+								"6810bef7770fecffd4abd411"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
